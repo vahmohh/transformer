@@ -1,8 +1,6 @@
 import json
-from pathlib import Path
 
 def read_squad(path):
-    path = Path(path)
     with open(path, 'rb') as f:
         squad_dict = json.load(f)
 
