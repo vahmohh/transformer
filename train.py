@@ -104,6 +104,7 @@ for epoch in range(3):
         loss = outputs[0]
         loss.backward()
         optim.step()
+        print(loss)
 
 model.eval()
 
