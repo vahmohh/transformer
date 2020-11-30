@@ -1,5 +1,4 @@
 import json
-from pathlib import Path
 
 def read_squad(path):
     path = Path(path)
