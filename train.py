@@ -30,8 +30,6 @@ def add_end_idx(answers, contexts):
         gold_text = answer['text']
         start_idx = answer['answer_start']
         end_idx = start_idx + len(gold_text)
-
-        # sometimes squad answers are off by a character or two – fix this
         if context[start_idx:end_idx] == gold_text:
             answer['answer_end'] = end_idx
         elif context[start_idx-1:end_idx-1] == gold_text:
