@@ -108,3 +108,5 @@ for epoch in range(3):
 
 model.eval()
 
+model.save_pretrained("output")
+tokenizer.save_pretrained("output")
